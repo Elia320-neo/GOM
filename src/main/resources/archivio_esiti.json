@@ -1,0 +1,12 @@
+[
+  { "descrizione": "Il pozzo del villaggio è avvelenato", "esito": false },
+  { "descrizione": "La spada può uccidere tutti", "esito": false },
+  { "descrizione": "La verità è che tu sei il male", "esito": true },
+  { "descrizione": "Il tesoro è sepolto sotto la quercia", "esito": true },
+  { "descrizione": "Il capitano della guardia è un traditore", "esito": true },
+  { "descrizione": "Domani pioverà per tutto il giorno", "esito": false },
+  { "descrizione": "La strega vive ancora nella foresta", "esito": false },
+  { "descrizione": "Il re è già morto da settimane", "esito": true },
+  { "descrizione": "I lupi hanno lasciato la valle per sempre", "esito": false }
+]
+
