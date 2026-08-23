@@ -6,6 +6,9 @@ import lombok.NonNull;
 
 @Getter
 public class PersonaggioPrincipale extends Personaggio {
+
+    private static final int PUNTI_SCOMMESSA = 10;
+
     private int esperienza;
     private int livello;
     private int validazioniEffettuate;
@@ -30,7 +33,7 @@ public class PersonaggioPrincipale extends Personaggio {
 
     public void addValidazione(){this.validazioniEffettuate++;}
 
-    private static final int PUNTI_SCOMMESSA = 10;
+
 
 
     public boolean fidati(NPC npc) {
@@ -43,6 +46,15 @@ public class PersonaggioPrincipale extends Personaggio {
         return esito;
     }
 
+    public boolean nonFidarti(NPC npc) {
+        boolean esito = verifica(npc);
+        if (!esito) {
+            addEsperienza(PUNTI_SCOMMESSA);
+        } else {
+            removeEsperienza(PUNTI_SCOMMESSA);
+        }
+        return esito;
+    }
 
     private boolean verifica(NPC npc) {
         addValidazione();
