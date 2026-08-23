@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Alan",
+    "professione": "Fabbro",
+    "itemNome": "Martello runico",
+    "itemDescrizione": "Un martello che rivela la verità"
+  },
+  {
+    "nome": "Garruk",
+    "professione": "Erborista",
+    "itemNome": "Borsa di erbe",
+    "itemDescrizione": "Contiene erbe rare"
+  },
+  {
+    "nome": "Lison",
+    "professione": "Guardia",
+    "itemNome": "Lancia pesante",
+    "itemDescrizione": "Usata per difendere il villaggio"
+  }
+]
