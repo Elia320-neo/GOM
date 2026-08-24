@@ -2,23 +2,21 @@ package it.unicam.cs.mpgc.rpg129097;
 
 import it.unicam.cs.mpgc.rpg129097.interfaces.Proposizione;
 import it.unicam.cs.mpgc.rpg129097.model.ArchivioProposizioni;
+import it.unicam.cs.mpgc.rpg129097.utils.NarrazioneData;
+import it.unicam.cs.mpgc.rpg129097.utils.ParserNarrazioni;
 import it.unicam.cs.mpgc.rpg129097.utils.ParserProposizioni;
+
+import java.util.List;
 
 public class MainApp {
 
     public static void main(String[] args) {
         ArchivioProposizioni archivio = new ParserProposizioni().parse("archivio_esiti.json");
 
-        System.out.println("Proposizioni caricate: " + archivio.getProposizioni().size());
+        List<NarrazioneData> listaNarrazioni = new ParserNarrazioni().parse("narrazioni.json");
 
-        for (Proposizione p : archivio.getProposizioni()) {
-            System.out.printf("- \"%s\" -> esito: %b%n", p.getDescrizione(), p.getEsito());
+        for (NarrazioneData testo: listaNarrazioni){
+            System.out.println(testo.descrizione);
         }
-
-        System.out.println("----------------------------------------");
-
-        String descrizioneTest = "La verità è che tu sei il male";
-        Proposizione trovata = archivio.cerca(descrizioneTest);
-        System.out.println("Ricerca \"" + descrizioneTest + "\" -> esito: " + trovata.getEsito());
     }
 }
