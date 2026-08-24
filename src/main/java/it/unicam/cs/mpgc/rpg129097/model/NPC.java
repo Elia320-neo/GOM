@@ -48,6 +48,7 @@ public class NPC extends Personaggio {
         System.out.println(getPresentazione());
     }
 
+    //TODO: aggiungere stringa di presentazione
     /**
      * Restituisce la presentazione dell'NPC.
      * @return la stringa contenente la presentazione dell'NPC

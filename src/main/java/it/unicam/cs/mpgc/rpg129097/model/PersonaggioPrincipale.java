@@ -36,6 +36,7 @@ public class PersonaggioPrincipale extends Personaggio {
         this.validazioniEffettuate = 0;
     }
 
+    //TODO: aggiungere stringa di presentazione
     @Override
     public void presentati(){}
 
