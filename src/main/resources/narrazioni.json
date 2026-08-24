@@ -1,0 +1,15 @@
+[
+  {
+    "numeroGiornata":1,
+    "descrizione": "descr. 1"
+  },
+  {
+    "numeroGiornata": 2,
+    "descrizione": "descr. 2"
+  },
+  {
+    "numeroGiornata": 3,
+    "descrizione": "descr. 3"
+  }
+]
+
