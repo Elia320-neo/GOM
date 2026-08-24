@@ -26,7 +26,7 @@ public class ParserNarrazioni {
      * Il contenuto del file viene poi convertito in una lista di oggetti {@link NarrazioneData},
      * tramite la libreria gson.</p>
      * @param resourcePath il percorso della risorsa JSON contenente i testi della narrazione
-     * @return un'istanza di {@link NarrazioneData} contenente le proposizioni caricate
+     * @return una {@link List} di {@link NarrazioneData} contenente le proposizioni caricate
      * @throws RuntimeException se il file non viene trovato nel percorso specificato
      * o se si verifica un errore durante la lettura o deserializzazione del JSON
      */
