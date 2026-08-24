@@ -5,6 +5,7 @@ import lombok.NonNull;
 
 import java.util.Collections;
 import java.util.List;
+import it.unicam.cs.mpgc.rpg129097.utils.CostantiGioco;
 
 /**
  * Orchestra una partita "one-shot": nessun dato viene salvato fra partite
@@ -31,7 +32,7 @@ public class Partita {
      * @throws IllegalArgumentException se la dimensione della lista {@code giornate} è diversa da 3
      */
     public Partita(@NonNull PersonaggioPrincipale personaggio, @NonNull List<Giornata> giornate) {
-        if (giornate.size() != 3) {throw new IllegalArgumentException("Una partita deve avere esattamente 3 giornate, ricevute: " + giornate.size());}
+        if (giornate.size() != CostantiGioco.NUMERO_GIORNATE) {throw new IllegalArgumentException("Una partita deve avere esattamente"+CostantiGioco.NUMERO_GIORNATE+ " giornate, ricevute: " + giornate.size());}
 
         this.personaggio = personaggio;
         this.giornate = Collections.unmodifiableList(giornate);
