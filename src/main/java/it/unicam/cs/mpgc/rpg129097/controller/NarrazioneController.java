@@ -10,7 +10,7 @@ import javafx.scene.control.TextArea;
 
 import javax.swing.plaf.basic.BasicButtonUI;
 import java.util.List;
-
+import it.unicam.cs.mpgc.rpg129097.utils.CostantiGioco;
 public class NarrazioneController {
 
     @FXML
@@ -41,15 +41,15 @@ public class NarrazioneController {
     @FXML
     private void onContinua() {
         if (modalitaIniziale) {
-            SceneController.cambia("game.fxml", partita);
+            SceneController.cambia(CostantiGioco.SCENA_GAME, partita);
             return;
         }
         partita.avanza();
 
         if (partita.isFinita()) {
-            SceneController.cambia("fine.fxml", partita);
+            SceneController.cambia(CostantiGioco.SCENA_FINE, partita);
         } else {
-            SceneController.cambia("game.fxml", partita);
+            SceneController.cambia(CostantiGioco.SCENA_GAME, partita);
         }
     }
 }
