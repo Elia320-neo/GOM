@@ -29,4 +29,24 @@ public class SceneController {
         }
     }
 
+
+    public static void cambiaConTesto(String fxml, Object data, String testo) {
+        try {
+            FXMLLoader loader = new FXMLLoader(SceneController.class.getResource("/fxml/" + fxml));
+            Parent root = loader.load();
+
+            Object controller = loader.getController();
+            if (data != null) {
+                controller.getClass().getMethod("setPartita", data.getClass(), String.class).invoke(controller, data, testo);
+            }
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }
