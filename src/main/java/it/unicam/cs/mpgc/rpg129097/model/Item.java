@@ -33,12 +33,10 @@ public class Item implements Validatore {
 
     /**
      * Costruisce un nuovo oggetto.
-     *
      * @param nome nome dell'oggetto
      * @param descrizione descrizione dell'oggetto
      * @param archivio archivio delle proposizioni utilizzato per la validazione
-     * @throws NullPointerException se {@code nome} o {@code descrizione}
-     *         sono {@code null}
+     * @throws NullPointerException se {@code nome} o {@code descrizione} sono {@code null}
      */
     public Item(@NonNull String nome, @NonNull String descrizione, ArchivioProposizioni archivio) {
         this.nome = nome;
@@ -50,11 +48,9 @@ public class Item implements Validatore {
     /**
      * Valida un'intuizione cercando nell'archivio la proposizione
      * corrispondente.
-     *
      * @param intuizione intuizione da validare
-     * @return la {@link Proposizione} corrispondente all'intuizione,
-     *         oppure il valore restituito dall'archivio qualora non
-     *         venga trovata una corrispondenza
+     * @return la {@link Proposizione} corrispondente all'intuizione, oppure il
+     * valore restituito dall'archivio qualora non venga trovata una corrispondenza
      */
     @Override
     public Proposizione valida(String intuizione) {
