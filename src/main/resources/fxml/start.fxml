@@ -17,6 +17,11 @@
       prefHeight="600"
       stylesheets="@../css/start.css">
 
+
+    <padding>
+        <Insets top="170" right="20" bottom="40" left="20"/>
+    </padding>
+
     <!-- INSERIMENTO NOME -->
     <Label text="Inserisci il tuo nome:" styleClass="label"/>
 
