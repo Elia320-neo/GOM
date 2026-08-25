@@ -10,10 +10,12 @@
 
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.unicam.cs.mpgc.rpg129097.controller.NarrazioneController"
       alignment="CENTER"
       spacing="20"
       prefWidth="900"
       prefHeight="600"
+      stylesheets="@../css/narrazione.css"
      >
 
     <!-- Titolo -->
