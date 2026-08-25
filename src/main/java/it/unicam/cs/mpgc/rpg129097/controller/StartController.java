@@ -11,6 +11,7 @@ import java.util.List;
 
 public class StartController {
 
+
     @FXML
     private TextField nomeField;
     @FXML
@@ -25,8 +26,7 @@ public class StartController {
             return;
         }
         Partita partita = generaPartita(nomePersonaggio, getArchivioProposizioni());
-
-
+        cambiaScena(partita);
     }
 
     public ArchivioProposizioni getArchivioProposizioni() {
@@ -38,6 +38,11 @@ public class StartController {
     public Partita generaPartita(String nomePersonaggio, ArchivioProposizioni archivio) {
         GeneratorePartita generatore = new GeneratorePartita(archivio);
         return generatore.genera(nomePersonaggio, archivio);
+    }
+
+    public void cambiaScena(Partita partita) {
+        SceneController.cambiaConTesto(CostantiGioco.SCENA_NARRAZIONE, partita,
+                "Ciao " + partita.getPersonaggio().getNome() + " benvenuto nel mondo di GOM");
     }
 
 

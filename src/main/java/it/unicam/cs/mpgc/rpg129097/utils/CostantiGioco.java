@@ -14,4 +14,5 @@ public final class CostantiGioco {
     public static final int NPC_TOTALI = NPC_PER_GIORNATA * NUMERO_GIORNATE;
     public static final String NPC_JSON = "npc.json";
     public static final String ARCHIVIO = "archivio_esiti.json";
+    public static final String SCENA_NARRAZIONE = "narrazione.fxml";
 }
