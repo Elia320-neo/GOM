@@ -10,11 +10,12 @@
 
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
+      fx:controller="it.unicam.cs.mpgc.rpg129097.controller.StartController"
       alignment="CENTER"
       spacing="15"
       prefWidth="900"
       prefHeight="600"
-      >
+      stylesheets="@../css/start.css">
 
     <!-- INSERIMENTO NOME -->
     <Label text="Inserisci il tuo nome:" styleClass="label"/>
