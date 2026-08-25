@@ -17,6 +17,10 @@
       stylesheets="@../css/fine.css"
      >
 
+    <padding>
+        <Insets top="70" right="20" bottom="100" left="20"/>
+    </padding>
+
     <!-- Titolo -->
     <Label text="Fine della partita"
            styleClass="title"/>
