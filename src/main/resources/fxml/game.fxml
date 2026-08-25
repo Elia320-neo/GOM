@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefWidth="900" prefHeight="600"
+            >
+
+    <!-- HEADER -->
+    <top>
+        <BorderPane BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="8" right="20" bottom="0" left="20"/>
+            </padding>
+            <left>
+                <Label text="Incontro con l'NPC" styleClass="header-title"/>
+            </left>
+            <right>
+                <Label fx:id="giornataLabel" styleClass="giornata-label"/>
+            </right>
+        </BorderPane>
+    </top>
+
+    <!-- CENTRO (TextArea ampia e ben visibile) -->
+    <center>
+        <VBox spacing="4"
+              alignment="CENTER"
+              BorderPane.alignment="CENTER">
+
+            <padding>
+                <Insets top="0" right="20" bottom="0" left="20"/>
+            </padding>
+
+            <ImageView fx:id="npcImage"
+                       fitWidth="120"
+                       fitHeight="120"
+                       preserveRatio="true"
+                       styleClass="npc-image"/>
+
+            <Label fx:id="nomeNpcLabel"
+                   styleClass="npc-name"/>
+
+            <Label fx:id="professioneNpcLabel"
+                   styleClass="npc-professione"/>
+
+
+            <TextArea fx:id="intuizioneArea"
+                      editable="false"
+                      wrapText="true"
+                      prefWidth="550"
+                      prefHeight="90"
+                      minHeight="90"
+                      maxHeight="90"
+                      VBox.vgrow="NEVER"
+                      styleClass="intuizione-area"/>
+        </VBox>
+    </center>
+
+
+    <bottom>
+        <VBox spacing="6"
+              alignment="CENTER"
+              BorderPane.alignment="BOTTOM_CENTER">
+
+            <padding>
+                <Insets top="5" right="20" bottom="12" left="20"/>
+            </padding>
+
+            <!-- Tutti i bottoni sulla stessa riga -->
+            <HBox spacing="15" alignment="CENTER">
+
+                <Button fx:id="fidatiButton"
+                        onAction="#onFidati"
+                        styleClass="btn-immagine">
+                    <graphic>
+                        <ImageView fitWidth="130" preserveRatio="true">
+                            <Image url="@/images/sfondiPulsanti/fidati.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="verificaButton"
+                        onAction="#onVerifica"
+                        disable="true"
+                        styleClass="btn-immagine">
+                    <graphic>
+                        <ImageView fitWidth="130" preserveRatio="true">
+                            <Image url="@/images/sfondiPulsanti/verifica.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="nonFidartiButton"
+                        onAction="#onNonFidarti"
+                        styleClass="btn-immagine">
+                    <graphic>
+                        <ImageView fitWidth="130" preserveRatio="true">
+                            <Image url="@/images/sfondiPulsanti/nonFidarti.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="continuaButton"
+                        onAction="#onContinua"
+                        visible="false"
+                        managed="false"
+                        styleClass="btn-immagine">
+                    <graphic>
+                        <ImageView fitWidth="130" preserveRatio="true">
+                            <Image url="@/images/sfondiPulsanti/continua.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+            </HBox>
+
+            <!-- Risultato -->
+            <Label fx:id="risultatoLabel"
+                   styleClass="risultato-label"
+                   minHeight="16"/>
+
+            <!-- Statistiche -->
+            <HBox spacing="40"
+                  alignment="CENTER"
+                  minHeight="20">
+
+                <Label fx:id="esperienzaLabel"
+                       styleClass="stat-label"/>
+
+                <Label fx:id="validazioniLabel"
+                       styleClass="stat-label"/>
+
+            </HBox>
+
+        </VBox>
+    </bottom>
+</BorderPane>
