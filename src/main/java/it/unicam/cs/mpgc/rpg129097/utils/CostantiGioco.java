@@ -15,4 +15,5 @@ public final class CostantiGioco {
     public static final String NPC_JSON = "npc.json";
     public static final String ARCHIVIO = "archivio_esiti.json";
     public static final String SCENA_NARRAZIONE = "narrazione.fxml";
+    public static final String SCENA_START = "start.fxml";
 }
