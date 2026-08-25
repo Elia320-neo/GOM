@@ -1,5 +1,13 @@
 package it.unicam.cs.mpgc.rpg129097.utils;
 
+
+/**
+ * Contiene tutte le costanti e i resources path del gioco.
+ * <p>La classe è dichiarata final per evitare di istanziare oggetti
+ * modificabil. I campi sono pubblici e statici per essere
+ * accessibili dall'esterno e non dipendere dalle singole istanze.</p>
+ * @author Elia Magini
+ */
 public final class CostantiGioco {
     public static final int NPC_PER_GIORNATA = 3;
     public static final int NUMERO_GIORNATE = 3;
