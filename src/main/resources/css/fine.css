@@ -1,0 +1,42 @@
+* {
+    -fx-font-family: "monospace";
+}
+
+
+.title {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, black, 6, 0.6, 0, 1);
+}
+
+.stat-label {
+    -fx-font-size: 24px;
+     -fx-text-fill: #32CD32;
+    -fx-effect: dropshadow(gaussian, black, 4, 0.6, 0, 1);
+}
+
+.btn-immagine {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+.btn-immagine:hover {
+    -fx-opacity: 0.85;
+}
+.btn-immagine:pressed {
+    -fx-opacity: 0.7;
+}
+
+.btn-immagine:focused {
+    -fx-effect: dropshadow(gaussian, #00ffff, 20, 0.5, 0, 0);
+    -fx-opacity: 1.0;
+}
+
+.root {
+    -fx-background-image: url("../images/finale.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
