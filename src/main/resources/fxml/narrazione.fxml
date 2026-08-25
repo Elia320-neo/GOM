@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="CENTER"
+      spacing="20"
+      prefWidth="900"
+      prefHeight="600"
+     >
+
+    <!-- Titolo -->
+    <Label text="Narrazione della giornata"
+           styleClass="title"/>
+
+    <!-- Testo narrazione -->
+    <TextArea fx:id="narrazioneArea"
+              editable="false"
+              wrapText="true"
+              prefWidth="700"
+              prefHeight="300"
+              styleClass="narrazione-area"/>
+
+    <!-- Bottone continua -->
+    <Button fx:id="continuaButton"
+            onAction="#onContinua"
+            styleClass="btn-immagine">
+        <graphic>
+            <ImageView fitWidth="400" preserveRatio="true">
+                <Image url="@/images/sfondiPulsanti/continua.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+
+
+</VBox>
