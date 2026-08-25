@@ -1,5 +1,7 @@
 plugins {
     application
+    id("org.openjfx.javafxplugin") version "0.1.0"
+
 }
 
 repositories {
@@ -14,4 +16,9 @@ dependencies {
 
 application {
     mainClass = "it.unicam.cs.mpgc.rpg129097.MainApp"
+}
+
+javafx{
+    version= "24.0.1"
+    modules("javafx.controls", "javafx.fxml", "javafx.media")
 }
