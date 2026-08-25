@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="CENTER"
+      spacing="20"
+      prefWidth="900"
+      prefHeight="600"
+     >
+
+    <!-- Titolo -->
+    <Label text="Fine della partita"
+           styleClass="title"/>
+
+
+    <!-- Statistiche -->
+    <Label fx:id="esperienzaLabel" styleClass="stat-label"/>
+    <Label fx:id="livelloLabel" styleClass="stat-label"/>
+    <Label fx:id="validazioniLabel" styleClass="stat-label"/>
+
+    <!-- Pulsanti -->
+    <Button fx:id="giocaDiNuovoButton"
+            onAction="#onGiocaDiNuovo"
+            styleClass="btn-immagine">
+        <graphic>
+            <ImageView fitWidth="200" preserveRatio="true">
+                <Image url="@/images/sfondiPulsanti/giocaDiNuovo.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <Button fx:id="chiudiButton"
+            onAction="#onChiudi"
+            styleClass="btn-immagine">
+        <graphic>
+            <ImageView fitWidth="200" preserveRatio="true">
+                <Image url="@/images/sfondiPulsanti/chiudi.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+
+</VBox>
