@@ -1,33 +1,31 @@
 package it.unicam.cs.mpgc.rpg129097;
 
-import it.unicam.cs.mpgc.rpg129097.interfaces.Proposizione;
-import it.unicam.cs.mpgc.rpg129097.model.ArchivioProposizioni;
-import it.unicam.cs.mpgc.rpg129097.model.NPC;
-import it.unicam.cs.mpgc.rpg129097.utils.*;
 
-import java.util.List;
 
-public class MainApp {
+import it.unicam.cs.mpgc.rpg129097.controller.SceneController;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class MainApp extends Application {
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        SceneController.setStage(stage);
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/start.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        stage.setTitle("GOM");
+        stage.setScene(scene);
+        stage.setWidth(900);
+        stage.setHeight(600);
+        stage.setResizable(false);
+        stage.show();
+    }
 
     public static void main(String[] args) {
-        ArchivioProposizioni archivio = new ParserProposizioni().parse("archivio_esiti.json");
-
-        List<NarrazioneData> listaNarrazioni = new ParserNarrazioni().parse("narrazioni.json");
-
-        for (NarrazioneData testo: listaNarrazioni){
-            System.out.println(testo.descrizione);
-        }
-
-        System.out.println("================================= TEST NPC ===============================0");
-
-        List<NPCData> listaNPC = new ParserNPC().parse("npc.json");
-
-        for(NPCData npc: listaNPC){
-            System.out.println("==============================================================");
-            System.out.println(npc.nome);
-            System.out.println(npc.itemNome);
-            System.out.println(npc.itemDescrizione);
-            System.out.println(npc.professione);
-        }
+        launch();
     }
 }
