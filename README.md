@@ -1,6 +1,6 @@
 # 📌 GOM
 
-GOM è un RPG (Role Playing Game) thriller con interfaccia grafica realizzato in JavaFX.
+GOM è un RPG (Role Playing Game) thriller con interfaccia grafica realizzata in JavaFX.
 
 Il gioco è ispirato alla short story horror di Harlan Ellison:
 [I Have No Mouth, and I Must Scream](https://en.wikipedia.org/wiki/I_Have_No_Mouth,_and_I_Must_Scream).
