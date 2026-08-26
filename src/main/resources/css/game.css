@@ -70,6 +70,10 @@
 .btn-immagine:disabled {
     -fx-opacity: 0.35;
 }
+.btn-immagine:focused {
+    -fx-effect: dropshadow(gaussian, #00ffff, 20, 0.5, 0, 0);
+    -fx-opacity: 1.0;
+}
 
 .risultato-label {
     -fx-font-size: 20px;
