@@ -18,4 +18,5 @@ public final class CostantiGioco {
     public static final String SCENA_START = "start.fxml";
     public static final String SCENA_GAME = "game.fxml";
     public static final String SCENA_FINE = "fine.fxml";
+    public static final String NPC_IMAGES = "/images/npc/";
 }
