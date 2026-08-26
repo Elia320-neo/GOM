@@ -11,6 +11,7 @@
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="it.unicam.cs.mpgc.rpg129097.controller.StartController"
+      fx:id="root"
       alignment="CENTER"
       spacing="15"
       prefWidth="900"

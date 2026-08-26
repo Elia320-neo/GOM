@@ -9,6 +9,7 @@
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="it.unicam.cs.mpgc.rpg129097.controller.GameController"
+            fx:id="root"
             prefWidth="900" prefHeight="600"
             stylesheets="@../css/game.css"
             >
