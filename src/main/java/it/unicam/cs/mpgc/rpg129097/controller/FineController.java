@@ -3,7 +3,9 @@ package it.unicam.cs.mpgc.rpg129097.controller;
 
 import it.unicam.cs.mpgc.rpg129097.model.Partita;
 import it.unicam.cs.mpgc.rpg129097.model.PersonaggioPrincipale;
+import it.unicam.cs.mpgc.rpg129097.utils.NavigazioneTastiera;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
@@ -34,6 +36,19 @@ public class FineController {
     private Button chiudiButton;
     @FXML
     private Button giocaDiNuovoButton;
+    @FXML
+    private Node root;
+
+
+    /**
+     * Inizializza la navigazione da tastiera della schermata.
+     * <p>Abilita la navigazione tramite tastiera sul pulsante di chiudi e gioca di nuovo
+     * della partita.</p>
+     */
+    public void initialize() {
+        NavigazioneTastiera.abilita(root, List.of(chiudiButton,giocaDiNuovoButton));
+    }
+
 
 
     /**

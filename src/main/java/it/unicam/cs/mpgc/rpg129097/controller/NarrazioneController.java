@@ -3,7 +3,9 @@ package it.unicam.cs.mpgc.rpg129097.controller;
 import it.unicam.cs.mpgc.rpg129097.model.Giornata;
 import it.unicam.cs.mpgc.rpg129097.model.Partita;
 import it.unicam.cs.mpgc.rpg129097.model.PersonaggioPrincipale;
+import it.unicam.cs.mpgc.rpg129097.utils.NavigazioneTastiera;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
@@ -30,6 +32,8 @@ public class NarrazioneController {
     private TextArea narrazioneArea;
     @FXML
     private Button continuaButton;
+    @FXML
+    private Node root;
 
     private Partita partita;
 
@@ -42,6 +46,13 @@ public class NarrazioneController {
     private boolean modalitaIniziale;
 
 
+
+    /**
+     * Inizializza la navigazione da tastiera della schermata.
+     * <p>Abilita la navigazione tramite tastiera sul pulsante di continua
+     * della partita.</p>
+     */
+    public void initialize() {NavigazioneTastiera.abilita(root, List.of(continuaButton));}
 
 
     /**

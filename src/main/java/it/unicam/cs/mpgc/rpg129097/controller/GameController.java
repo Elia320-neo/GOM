@@ -4,14 +4,18 @@ import it.unicam.cs.mpgc.rpg129097.model.Giornata;
 import it.unicam.cs.mpgc.rpg129097.model.NPC;
 import it.unicam.cs.mpgc.rpg129097.model.Partita;
 import it.unicam.cs.mpgc.rpg129097.model.PersonaggioPrincipale;
+import it.unicam.cs.mpgc.rpg129097.utils.NavigazioneTastiera;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import it.unicam.cs.mpgc.rpg129097.utils.CostantiGioco;
+
+import java.util.List;
 
 /**
  * Controller principale della schermata di gioco.
@@ -61,11 +65,24 @@ public class GameController {
     @FXML
     private Label validazioniLabel;
 
+    @FXML
+    private Node root;
+
+
     private Partita partita;
     private PersonaggioPrincipale personaggio;
     private NPC npcCorrente;
     private Boolean esitoScelta;
     private int indiceNpc = 0;
+
+    /**
+     * Inizializza la navigazione da tastiera della schermata.
+     * <p>Abilita la navigazione tramite tastiera sul pulsante di fidati,
+     * non fidarti, verifica e continua della partita.</p>
+     */
+    public void initialize() {
+        NavigazioneTastiera.abilita(root, List.of(fidatiButton, nonFidartiButton, verificaButton, continuaButton));
+    }
 
 
     /**
