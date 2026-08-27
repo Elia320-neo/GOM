@@ -1,5 +1,6 @@
 package it.unicam.cs.mpgc.rpg129097.model;
 
+import it.unicam.cs.mpgc.rpg129097.utils.CostantiGioco;
 import lombok.Getter;
 import lombok.NonNull;
 
@@ -14,9 +15,6 @@ import java.util.List;
  */
 @Getter
 public class Giornata {
-
-    private final static int NUMERO_NPC_PER_GIORNATA = 3;
-
 
     private final int numero;
 
@@ -33,8 +31,8 @@ public class Giornata {
      * @throws IllegalArgumentException se la dimensione della lista {@code npc} è diversa da 3
      */
     public Giornata(int numero, @NonNull List<NPC> npc, @NonNull String narrazione) {
-        if (npc.size() != NUMERO_NPC_PER_GIORNATA) {
-            throw new IllegalArgumentException("Ogni giornata deve avere esattamente" + NUMERO_NPC_PER_GIORNATA+" NPC, ricevuti: " + npc.size());
+        if (npc.size() != CostantiGioco.NPC_PER_GIORNATA) {
+            throw new IllegalArgumentException("Ogni giornata deve avere esattamente" + CostantiGioco.NPC_PER_GIORNATA+" NPC, ricevuti: " + npc.size());
         }
         this.numero = numero;
         this.npc = Collections.unmodifiableList(npc);
