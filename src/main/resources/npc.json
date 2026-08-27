@@ -1,20 +1,57 @@
 [
   {
-    "nome": "Alan",
-    "professione": "Fabbro",
-    "itemNome": "Martello runico",
-    "itemDescrizione": "Un martello che rivela la verità"
+    "nome": "Magister Tommaso",
+    "professione": "alchimista",
+    "itemNome": "Veritaserum",
+    "itemDescrizione": "utile nelle investigazioni piu intricate"
   },
   {
-    "nome": "Garruk",
-    "professione": "Erborista",
-    "itemNome": "Borsa di erbe",
-    "itemDescrizione": "Contiene erbe rare"
+    "nome": "Vanni",
+    "professione": "mercante",
+    "itemNome": "amuleto portafortuna",
+    "itemDescrizione": "utile nei viaggi piu turbolenti"
   },
   {
-    "nome": "Lison",
-    "professione": "Guardia",
-    "itemNome": "Lancia pesante",
-    "itemDescrizione": "Usata per difendere il villaggio"
+    "nome": "Jacopo da Colle",
+    "professione": "cavaliere",
+    "itemNome": "elmo di bronzo",
+    "itemDescrizione": "utile per proteggersi dagli attacchi altrui"
+  },
+  {
+    "nome": "Signora Fiorita",
+    "professione": "locandiera",
+    "itemNome": "boccale di birra",
+    "itemDescrizione": "utile per rinfrescarsi dopo pe lunghe giornate"
+  },
+  {
+    "nome": "Checco",
+    "professione": "bambino della città",
+    "itemNome": "sacchetto di biglie",
+    "itemDescrizione": "utile per non perdersi lungo il tragitto"
+  },
+  {
+    "nome": "Don Pietro",
+    "professione": "prete",
+    "itemNome": "mantello sacro",
+    "itemDescrizione": "utile per coprirsi dai mali e dal freddo"
+  },
+  {
+    "nome": "Mastro Valerio",
+    "professione": "fabbro",
+    "itemNome": "spada infuocata",
+    "itemDescrizione": "utile per sconfiggere tutti i tuoi nemici"
+  },
+  {
+    "nome": "Berto Cantore",
+    "professione": "musicista",
+    "itemNome": "Lira d'oro",
+    "itemDescrizione": "utile per ammaliare chiunque tu voglia"
+  },
+  {
+    "nome": "Frate Bernardo",
+    "professione": "ammanuense",
+    "itemNome": "grimorio magico",
+    "itemDescrizione": "utile per raccogliere informazioni sulle creature del mondo"
   }
+
 ]
