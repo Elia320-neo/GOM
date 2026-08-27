@@ -1,12 +1,41 @@
 [
-  { "descrizione": "Il pozzo del villaggio è avvelenato", "esito": false },
-  { "descrizione": "La spada può uccidere tutti", "esito": false },
-  { "descrizione": "La verità è che tu sei il male", "esito": true },
-  { "descrizione": "Il tesoro è sepolto sotto la quercia", "esito": true },
-  { "descrizione": "Il capitano della guardia è un traditore", "esito": true },
-  { "descrizione": "Domani pioverà per tutto il giorno", "esito": false },
-  { "descrizione": "La strega vive ancora nella foresta", "esito": false },
-  { "descrizione": "Il re è già morto da settimane", "esito": true },
-  { "descrizione": "I lupi hanno lasciato la valle per sempre", "esito": false }
+  { "descrizione": "Non farti ingannare da questa miseria viaggiatore, ho letto nei miei scritti che GOM non ha davvero bruciato le biblioteche le sta solo nascondendo per proteggerci. Chi dimostra totale obbedienza al Sistema riavrà indietro la propria identità e i libri degli antichi.",
+    "esito": false },
+
+  {
+    "descrizione": "Stammi a sentire forestiero. GOM non è un'AI, è un'invenzione dei governanti per farci paura. Le nazioni esistono ancora e controllano tutto in segreto dietro le quinte.",
+    "esito": false },
+
+
+  {
+    "descrizione": "Apri gli occhi sire, questo villaggio e l'assenza di tecnologia non sono cultura o nostalgia GOM ci fa vivere come nel Medioevo solo per controllarci meglio e toglierci ogni potere ma io non mi piegherò mai a lui.",
+    "esito": true },
+
+  {
+    "descrizione": "Ascoltami ragazzo, quando cala il sole non siamo noi a sbarrare le porte. E chi scompare nella notte dicono che non è mai fuggito via. GOM prende chiunque abbia dubbi e lo cancella.",
+    "esito": true },
+
+
+  {
+    "descrizione": "Sai che i grandi ti guardano male perché tu sei strano? Mamma e Papà mi hanno detto di starti lontano perché tu non sei uno dei nostri e non ci possiamo fidare. Perché sei cosi?",
+    "esito": true },
+
+
+  {
+    "descrizione": "Sai, GOM sceglie i più devoti e li manda nella terra promessa. Nessuno viene portato via con la forza, è solo un premio spirituale e volontà di Dio.",
+    "esito": false },
+
+  {
+    "descrizione": "Sai che sei solo uno sprovveduto che si è perso. Pensi di essere speciale perché non segui i nostri rituali, ma la verità è che il villaggio ti ignora solo perché non vali nulla per chi ci giverna.",
+    "esito": false },
+
+  { "descrizione": "Sento le tue vibrazioni nell'aria come una canzone, non sei arrivato qui per caso. Questo villaggio ti attrae perché custodisce un segreto legato a te prima che perdessi la memoria.",
+    "esito": true },
+
+
+  {
+    "descrizione": "Sai io ho studiato a lungo i vecchi testi prima che venissero bruciati, ho letto di te. Non sei sottoposto alle nostre regole perché quelle catene le hai create tu. Tu sei GOM.",
+    "esito": true }
+
 ]
 
