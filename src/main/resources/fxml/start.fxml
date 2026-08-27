@@ -24,13 +24,13 @@
     </padding>
 
     <!-- INSERIMENTO NOME -->
-    <Label text="Inserisci il tuo nome:" styleClass="label"/>
+    <Label text="Inserisci il tuo nome viaggiatore:" styleClass="label"/>
 
     <TextField fx:id="nomeField"
                promptText="Il tuo nome..."
                styleClass="text-field"
-               prefWidth="300"
-               maxWidth="300"/>
+               prefWidth="450"
+               maxWidth="450"/>
 
     <!-- BOTTONE INIZIA -->
     <Button fx:id="iniziaButton"

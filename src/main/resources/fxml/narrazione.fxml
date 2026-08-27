@@ -20,7 +20,7 @@
      >
 
     <!-- Titolo -->
-    <Label text="Narrazione della giornata"
+    <Label text="Narrazione"
            styleClass="title"/>
 
 
