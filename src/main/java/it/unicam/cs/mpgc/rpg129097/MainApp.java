@@ -34,8 +34,8 @@ public class MainApp extends Application {
 
         stage.setTitle("GOM");
         stage.setScene(scene);
-        stage.setWidth(1000);
-        stage.setHeight(700);
+        stage.setWidth(1100);
+        stage.setHeight(800);
         stage.setResizable(false);
         stage.show();
     }
