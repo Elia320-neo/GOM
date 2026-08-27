@@ -1,6 +1,7 @@
 package it.unicam.cs.mpgc.rpg129097.model;
 
 import it.unicam.cs.mpgc.rpg129097.interfaces.Proposizione;
+import it.unicam.cs.mpgc.rpg129097.utils.CostantiGioco;
 import lombok.Getter;
 import lombok.NonNull;
 
@@ -12,8 +13,6 @@ import lombok.NonNull;
 @Getter
 public class PersonaggioPrincipale extends Personaggio {
 
-    private static final int PUNTI_SCOMMESSA = 10;
-    private static final int[] SOGLIE_ESPERIENZA_PER_LIVELLO = {0, 10, 30};
 
     private int esperienza;
 
@@ -75,9 +74,9 @@ public class PersonaggioPrincipale extends Personaggio {
     public boolean fidati(NPC npc) {
         boolean esito = verifica(npc);
         if (esito) {
-            addEsperienza(PUNTI_SCOMMESSA);
+            addEsperienza(CostantiGioco.PUNTI_SCOMMESSA);
         } else {
-            removeEsperienza(PUNTI_SCOMMESSA);
+            removeEsperienza(CostantiGioco.PUNTI_SCOMMESSA);
         }
         return esito;
     }
@@ -92,9 +91,9 @@ public class PersonaggioPrincipale extends Personaggio {
     public boolean nonFidarti(NPC npc) {
         boolean esito = verifica(npc);
         if (!esito) {
-            addEsperienza(PUNTI_SCOMMESSA);
+            addEsperienza(CostantiGioco.PUNTI_SCOMMESSA);
         } else {
-            removeEsperienza(PUNTI_SCOMMESSA);
+            removeEsperienza(CostantiGioco.PUNTI_SCOMMESSA);
         }
         return esito;
     }
@@ -117,10 +116,10 @@ public class PersonaggioPrincipale extends Personaggio {
      * @throws IllegalArgumentException se l'indice della giornata non è valido
      */
     public void valutaLivello(int giornataCompletata) {
-        if (giornataCompletata < 1 || giornataCompletata > SOGLIE_ESPERIENZA_PER_LIVELLO.length) {
+        if (giornataCompletata < 1 || giornataCompletata > CostantiGioco.SOGLIE_ESPERIENZA_PER_LIVELLO.length) {
             throw new IllegalArgumentException("Giornata non valida: " + giornataCompletata);
         }
-        int sogliaRichiesta = SOGLIE_ESPERIENZA_PER_LIVELLO[giornataCompletata - 1];
+        int sogliaRichiesta = CostantiGioco.SOGLIE_ESPERIENZA_PER_LIVELLO[giornataCompletata - 1];
         if (esperienza >= sogliaRichiesta) {
             livello = Math.max(livello, giornataCompletata);
         }
