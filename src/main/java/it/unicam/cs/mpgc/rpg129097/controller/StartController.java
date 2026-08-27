@@ -93,7 +93,7 @@ public class StartController {
      * @param partita la partita da passare alla nuova scena
      */
     public void cambiaScena(Partita partita) {
-        SceneController.cambiaConTesto(CostantiGioco.SCENA_NARRAZIONE, partita, CostantiGioco.INTRODUZIONE);
+        SceneController.cambiaConTesto(CostantiGioco.SCENA_NARRAZIONE, partita,"Ciao " + partita.getPersonaggio().getNome() + ", benvenuto nel mondo di GOM.\n"+ CostantiGioco.INTRODUZIONE);
     }
 
 
