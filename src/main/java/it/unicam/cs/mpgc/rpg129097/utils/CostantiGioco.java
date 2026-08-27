@@ -19,4 +19,7 @@ public final class CostantiGioco {
     public static final String SCENA_GAME = "game.fxml";
     public static final String SCENA_FINE = "fine.fxml";
     public static final String NPC_IMAGES = "/images/npc/";
+    public static final int PUNTI_SCOMMESSA = 10;
+    public static final int[] SOGLIE_ESPERIENZA_PER_LIVELLO = {0, 10, 30};
+
 }
