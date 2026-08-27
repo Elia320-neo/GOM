@@ -48,12 +48,12 @@ public class NPC extends Personaggio {
         System.out.println(getPresentazione());
     }
 
-    //TODO: aggiungere stringa di presentazione
     /**
      * Restituisce la presentazione dell'NPC.
      * @return la stringa contenente la presentazione dell'NPC
      */
     public String getPresentazione() {
-        return "";
+        return  "Ciao, sono " + this.nome + "... è un piacere conoscerti." +
+                " Il mio ruolo è: " + this.professione + "\n"+ this.intuizione;
     }
 }
