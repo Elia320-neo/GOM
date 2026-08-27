@@ -40,8 +40,8 @@
             </padding>
 
             <ImageView fx:id="npcImage"
-                       fitWidth="120"
-                       fitHeight="120"
+                       fitWidth="300"
+                       fitHeight="300"
                        preserveRatio="true"
                        styleClass="npc-image"/>
 
@@ -56,8 +56,8 @@
                       editable="false"
                       wrapText="true"
                       prefWidth="550"
-                      prefHeight="90"
-                      minHeight="90"
+                      prefHeight="130"
+                      minHeight="130"
                       maxHeight="90"
                       VBox.vgrow="NEVER"
                       styleClass="intuizione-area"/>

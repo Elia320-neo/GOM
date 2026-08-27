@@ -23,12 +23,16 @@
     <Label text="Narrazione della giornata"
            styleClass="title"/>
 
+
+    <padding>
+        <Insets top="0" right="20" bottom="0" left="20"/>
+    </padding>
     <!-- Testo narrazione -->
     <TextArea fx:id="narrazioneArea"
               editable="false"
               wrapText="true"
               prefWidth="700"
-              prefHeight="300"
+              prefHeight="450"
               styleClass="narrazione-area"/>
 
     <!-- Bottone continua -->
